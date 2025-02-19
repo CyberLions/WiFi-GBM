@@ -1,13 +1,13 @@
 # Create a captive portal
 1. Download the nodogsplash plugin from the router configuration page
-2. SSH into the router using ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.8.1
-3. Create the nodogsplash.conf file in /etc/nodogsplash
-4. Edit the splash.html file in /etc/nodogsplash/htdocs with the provided splash.html file
+2. SSH into the router using `ssh -oHostKeyAlgorithms=+ssh-rsa root@192.168.8.1`
+3. Create the `nodogsplash.conf` file in `/etc/nodogsplash`
+4. Edit the `splash.html` file in `/etc/nodogsplash/htdocs` with the provided `splash.html` file
 5. Copy Penn State logo using `scp -O -oHostKeyAlgorithms=+ssh-rsa psulogoforincommon-456x150.png root@192.168.8.1:/etc/nodogs`
 
 # Create the evil twin
 1. Download airgeddon using `git clone --depth 1 https://github.com/v1s1t0r1sh3r3/airgeddon.git`
-2. Download the required dependencies and run using `sudo bash airgeddon.sh -i'
+2. Download the required dependencies and run using `sudo bash airgeddon.sh -i`
 3. Select your Alfa adapter from the menu
 4. Place it in monitor mode
 5. Select evil twin attacks -> evil twin with captive portal
